@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Earth</title>
+
+    <!-- daisyui and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font style -->
 </head>
 <body>
-    
+
+<!-- Navbar -->
+<div class="navbar bg-[#15803D] shadow-sm ">
+    <div class="navbar-start ml-15">
+        <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden hover:bg-green-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+        </div>
+        <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow bg-green-200">
+            <li><a href="" class="hover:bg-green-400">About</a></li>
+            <li><a href="" class="hover:bg-green-400">Gallery</a></li>
+            <li><a href="" class="hover:bg-green-400">Plant a Tree</a></li>
+        </ul>
+        </div>
+        <p class="text-xl text-white font-semibold btn-ghost ">Green Earth</p>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+            <li><a href="" class="hover:bg-green-400 text-white 
+            font-medium hover:text-black">About</a></li>
+            <li><a href="" class="hover:bg-green-400 text-white font-medium hover:text-black">Gallery</a></li>
+            <li><a href="" class="hover:bg-green-400 text-white font-medium hover:text-black">Plant a Tree</a></li>
+        </ul>
+    </div>
+    <div class="navbar-end mr-15">
+        <a class="btn bg-yellow-400 rounded-3xl text-green-700">Plant a Tree</a>
+    </div>
+</div>
+
+<!-- Banner -->
+<div>
+   <div class="flex justify-around max-h-[350px] bg-[#cff0dc] ">
+        <img class="max-md:h-35" src="./B12A06-Green-Earth/assets/hero-leaf1.png"  alt="">
+        <div class="text-center items-center my-auto ">
+            <h1 class="font-bold text-4xl max-md:text-xl">Plant a Tree, Grow a Future</h1>
+            <p class="my-5 max-md:text-[10px]">Join our mission to plant 1 million trees and make the Earth greener for future <br>generations.</p>
+            <button class=""><a class="max-md:h-10 max-md:w-30 btn bg-yellow-400 rounded-3xl text-green-700 ">Get Involved</a></button>
+        </div>
+        <img src="./B12A06-Green-Earth/assets/hero-leaf2.png" class="max-md:h-35" alt="">
+   </div>
+</div>
+
+
+
 </body>
 </html>
