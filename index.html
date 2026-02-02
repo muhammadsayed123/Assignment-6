@@ -57,118 +57,43 @@
 </div>
 
 <!-- Choose section -->
+
+    <!-- Modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Press ESC key or click the button below to close</p>
+            <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
+
     <h1 class="bg-[#f0fdf4] text-3xl font-bold text-center pt-20">Choose Your Trees</h1>
-<div class="bg-[#f0fdf4] p-10 flex justify-between max-md:flex-col max-md:gap-7">
+    <div class="bg-[#f0fdf4] p-10 flex justify-between max-md:flex-col max-md:gap-7">
 
     <!-- list section -->
-    <div class="list-div border-2 h-auto w-[250px] max-md:w-full">
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minus enim atque expedita magnam modi reprehenderit quis maiores, voluptate iste! Sit veniam vel atque aliquam, ipsam ipsum iste, minima in magnam itaque beatae dicta earum rem eius natus. Similique libero assumenda aut enim! Omnis, porro beatae minus aliquam et, animi suscipit quidem, alias consectetur dolore nihil. Vero voluptate possimus iste cum at blanditiis doloremque itaque ipsa dolore mollitia! Quas, a exercitationem. Velit pariatur voluptas sed reprehenderit odit placeat voluptate amet magni provident quidem quibusdam saepe, natus perspiciatis odio! Magnam libero ex repellendus odio doloremque esse omnis ipsa ea inventore, sequi dolorem rem ipsam nihil, repellat expedita iusto molestias. Exercitationem sint sapiente maxime, magnam voluptates molestiae minus iste fugit, incidunt cum eaque eveniet molestias ratione eligendi atque numquam natus consequuntur ullam veniam illum! Magni suscipit neque quidem accusamus eius iusto atque, voluptas facere voluptate odio harum qui nisi enim nihil, excepturi consectetur sit quis. Numquam, autem harum natus, tempora repellat est dicta architecto debitis ad qui, laudantium quisquam maxime? Expedita in quaerat ea a tempore qui quisquam deserunt libero, nulla, amet quae repellendus nobis dignissimos accusamus vel sapiente rerum deleniti! Accusantium fuga culpa necessitatibus dignissimos rerum iusto corrupti quod quos est.</h1>
-        
+    <div class="list-div h-auto w-[250px] max-md:w-full">
+        <h1 class="text-2xl font-bold mb-1">Categories</h1>
+        <button  class=" w-full text-start text-xl p-1 rounded-lg hover:bg-green-800 hover:text-white ">All Trees</button>
+        <div id="category-btn" class="flex flex-col">
+            
+        </div>
         
     </div>
 
     <!-- cart section -->
-    <div class="cart-div border-2 grid grid-cols-3 max-md:grid-cols-1 gap-4">
-        <div class="w-[320px] max-md:w-full h-[390px] rounded-2xl shadow-2xl ">
-            <img class="w-full h-[200px]" src="./B12A06-Green-Earth/assets/about.png" alt="">
-            <div class="p-2">
-                <h1 class="text-xl font-bold my-2">Mango tree</h1>
-                <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, praesentium.</p>
-                <div class="flex justify-between my-2">
-                    <button class="bg-[#dcfce7] rounded-2xl p-1 font-medium text-green-700">Grute tree</button>
-                    <p class="font-bold mr-3">$<span>500</span></p>
-                </div>
-                <button class="bg-green-800 w-full rounded-full text-white p-1 font-semibold mb-2">add to cart</button>
-            </div>
-        </div>
-        <div class="w-[320px] max-md:w-full h-[390px] rounded-xl shadow-2xl ">
-            <img class="w-full h-[200px]" src="./B12A06-Green-Earth/assets/about.png" alt="">
-            <div class="p-2">
-                <h1 class="text-xl font-bold my-2">Mango tree</h1>
-                <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, praesentium.</p>
-                <div class="flex justify-between my-2">
-                    <button class="bg-[#dcfce7] rounded-2xl p-1 font-medium text-green-700">Grute tree</button>
-                    <p class="font-bold mr-3">$<span>500</span></p>
-                </div>
-                <button class="bg-green-800 w-full rounded-full text-white p-1 font-semibold mb-2">add to cart</button>
-            </div>
-        </div>
-        <div class="w-[320px] max-md:w-full h-[390px] rounded-xl shadow-2xl ">
-            <img class="w-full h-[200px]" src="./B12A06-Green-Earth/assets/about.png" alt="">
-            <div class="p-2">
-                <h1 class="text-xl font-bold my-2">Mango tree</h1>
-                <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, praesentium.</p>
-                <div class="flex justify-between my-2">
-                    <button class="bg-[#dcfce7] rounded-2xl p-1 font-medium text-green-700">Grute tree</button>
-                    <p class="font-bold mr-3">$<span>500</span></p>
-                </div>
-                <button class="bg-green-800 w-full rounded-full text-white p-1 font-semibold mb-2">add to cart</button>
-            </div>
-        </div>
-        <div class="w-[320px] max-md:w-full h-[390px] rounded-xl shadow-2xl ">
-            <img class="w-full h-[200px]" src="./B12A06-Green-Earth/assets/about.png" alt="">
-            <div class="p-2">
-                <h1 class="text-xl font-bold my-2">Mango tree</h1>
-                <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, praesentium.</p>
-                <div class="flex justify-between my-2">
-                    <button class="bg-[#dcfce7] rounded-2xl p-1 font-medium text-green-700">Grute tree</button>
-                    <p class="font-bold mr-3">$<span>500</span></p>
-                </div>
-                <button class="bg-green-800 w-full rounded-full text-white p-1 font-semibold mb-2">add to cart</button>
-            </div>
-        </div>
-        <div class="w-[320px] max-md:w-full h-[390px] rounded-xl shadow-2xl ">
-            <img class="w-full h-[200px]" src="./B12A06-Green-Earth/assets/about.png" alt="">
-            <div class="p-2">
-                <h1 class="text-xl font-bold my-2">Mango tree</h1>
-                <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, praesentium.</p>
-                <div class="flex justify-between my-2">
-                    <button class="bg-[#dcfce7] rounded-2xl p-1 font-medium text-green-700">Grute tree</button>
-                    <p class="font-bold mr-3">$<span>500</span></p>
-                </div>
-                <button class="bg-green-800 w-full rounded-full text-white p-1 font-semibold mb-2">add to cart</button>
-            </div>
-        </div>
-        <div class="w-[320px] max-md:w-full h-[390px] rounded-xl shadow-2xl ">
-            <img class="w-full h-[200px]" src="./B12A06-Green-Earth/assets/about.png" alt="">
-            <div class="p-2">
-                <h1 class="text-xl font-bold my-2">Mango tree</h1>
-                <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, praesentium.</p>
-                <div class="flex justify-between my-2">
-                    <button class="bg-[#dcfce7] rounded-2xl p-1 font-medium text-green-700">Grute tree</button>
-                    <p class="font-bold mr-3">$<span>500</span></p>
-                </div>
-                <button class="bg-green-800 w-full rounded-full text-white p-1 font-semibold mb-2">add to cart</button>
-            </div>
-        </div>
-        <div class="w-[320px] max-md:w-full h-[390px] rounded-xl shadow-2xl ">
-            <img class="w-full h-[200px]" src="./B12A06-Green-Earth/assets/about.png" alt="">
-            <div class="p-2">
-                <h1 class="text-xl font-bold my-2">Mango tree</h1>
-                <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, praesentium.</p>
-                <div class="flex justify-between my-2">
-                    <button class="bg-[#dcfce7] rounded-2xl p-1 font-medium text-green-700">Grute tree</button>
-                    <p class="font-bold mr-3">$<span>500</span></p>
-                </div>
-                <button class="bg-green-800 w-full rounded-full text-white p-1 font-semibold mb-2">add to cart</button>
-            </div>
-        </div>
-        <div class="w-[320px] max-md:w-full h-[390px] rounded-xl shadow-2xl ">
-            <img class="w-full h-[200px]" src="./B12A06-Green-Earth/assets/about.png" alt="">
-            <div class="p-2">
-                <h1 class="text-xl font-bold my-2">Mango tree</h1>
-                <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, praesentium.</p>
-                <div class="flex justify-between my-2">
-                    <button class="bg-[#dcfce7] rounded-2xl p-1 font-medium text-green-700">Grute tree</button>
-                    <p class="font-bold mr-3">$<span>500</span></p>
-                </div>
-                <button class="bg-green-800 w-full rounded-full text-white p-1 font-semibold mb-2">add to cart</button>
-            </div>
-        </div>
+    <div id="cart-container" class="cart-div grid grid-cols-3 max-md:grid-cols-1 gap-4">
+        
     </div>
 
     <!-- shop section -->
-    <div class="shop-div border-2 h-auto w-[250px] max-md:w-full">
+    <div class="shop-div h-auto w-[250px] max-md:w-full">
         <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque voluptas aliquam numquam dolore vitae mollitia sunt tenetur eveniet vero. Beatae qui temporibus magnam? At cupiditate ullam ab dolor omnis, laborum inventore beatae exercitationem? Sequi, unde dignissimos cum atque reprehenderit fuga ullam officia vitae totam tempore accusantium quos corrupti blanditiis rem mollitia deserunt labore, in ducimus? Laboriosam facilis unde repellat cupiditate adipisci quos repudiandae modi recusandae tenetur reprehenderit nesciunt doloremque iure, voluptas enim itaque distinctio reiciendis delectus sit dicta atque dolore nostrum illum! Possimus quam ipsum et consectetur distinctio debitis nostrum ut, quia, asperiores ratione nesciunt quos blanditiis doloribus, repudiandae accusantium.</h1>
     </div>
 
@@ -236,5 +161,8 @@
     <p class="text-white text-xl ">&copy; 2025 Green Earth. All Rights Reserved.</p>
 </div>
 
+
+
+<script src="./script.js"></script>
 </body>
 </html>
