@@ -38,25 +38,39 @@ const displayAllPlants=(plants)=>{
 }
 loadAllPlants()
 
+const removeActiveBtn=()=>{
+    const lessonBtn=document.querySelectorAll(".lesson-btn")
+    // console.log(lessonBtn)
+    lessonBtn.forEach(btn=>{
+        btn.classList.remove("active")
+    })
+}
+
 const loadSeparatePlant=(id)=>{
     // console.log(id)
     const url=`https://openapi.programming-hero.com/api/category/${id}`
     // console.log(url)
     fetch(url)
     .then(res=>res.json())
-    .then(info=>displaySeparatePlant(info.plants))
+    .then(info=>{
+        removeActiveBtn()
+        const lessonBtn=document.getElementById(`lesson-btn-${id}`)
+        // console.log(lessonBtn)
+        lessonBtn.classList.add("active")
+        displaySeparatePlant(info.plants)
+    })
 }
 
 
 
 
 const displaySeparatePlant=(d)=>{
-    console.log(d)
+    // console.log(d)
     const cartContainer=document.getElementById("cart-container")
     cartContainer.innerHTML=""
 
     d.forEach(p=>{
-        console.log(p.name)
+        // console.log(p.name)
 
         const cD=document.createElement('div')
         cD.innerHTML=`
@@ -87,7 +101,7 @@ const displayCategory=(data)=>{
 
         const btn=document.createElement("button")
         btn.innerHTML=`
-            <button onClick="loadSeparatePlant(${d.id})" class=" w-full text-start text-xl p-1 rounded-lg hover:bg-green-800 hover:text-white ">${d.category_name}</button>
+            <button id="lesson-btn-${d.id}" onClick="loadSeparatePlant(${d.id})" class=" w-full text-start text-xl p-1 rounded-lg hover:bg-green-800 hover:text-white lesson-btn">${d.category_name}</button>
         `
         categoryBtn.append(btn)
     })
